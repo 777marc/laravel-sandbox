@@ -21,4 +21,4 @@ Route::get('/', function () {
 
 Route::get('/foo', function () {
     dd('heyo test');
-})->middleware('api');
+})->middleware('throttle:foo');
