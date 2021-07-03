@@ -16,9 +16,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     //event(new GiftCertificatePurchased());
-    return view('welcome');
+    return view('home');
 });
 
 Route::get('/foo', function () {
-    dd('heyo test');
+    return view('foo');
 })->middleware('throttle:foo');
